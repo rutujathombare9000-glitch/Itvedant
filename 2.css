@@ -16,8 +16,8 @@ h1{
     transform: translate(-50%, -50%);
     max-width: 500px;
     height: 200px;
-    shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .centered-paragraph {
