@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* Center the image */
+/* img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    height: 200px;
+    shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.centered-paragraph {
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    border: 5px solid #000000;
+    padding: 20px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
