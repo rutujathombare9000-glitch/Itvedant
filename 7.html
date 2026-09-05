@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Student Profile</title>
+		<style>
+			body {
+				font-family: "Times New Roman", Times, serif;
+			}
+
+			.form-container h3 {
+				text-align: center;
+				margin-top: 100px;
+				font-size: 25px;
+			}
+
+			h3 {
+				margin-right: 300px;
+                text-align: right;
+			}
+
+			.form-row {
+				margin-bottom: 1px;
+			}
+
+			label {
+				display: inline-block;
+				width: 150px;
+				text-align: center;
+				font-weight: bold;
+				margin-left: 400px;
+			}
+
+			input[type="text"],
+			input[type="date"],
+			input[type="number"] {
+				width: 220px;
+				padding: 5px;
+			}
+
+			input[textarea] {
+				width: 220px;
+				padding: 5px;
+			}
+
+			/* Gender radio buttons */
+			.gender-options {
+				display: inline-block;
+				margin-left: 5px;
+			}
+
+			.gender-options label {
+				width: auto;
+				margin-left: 0;
+				margin-right: 15px;
+				font-weight: normal;
+			}
+
+			/* Address fields */
+			.address-row {
+				display: flex;
+				align-items: center;
+				margin-bottom: 4px;
+			}
+
+			.address-row>label {
+				margin-left: 400px;
+				margin-right: 4px;
+			}
+
+			textarea {
+				padding: 5px;
+				width: 400px;
+				height: 100px;
+			}
+
+			button {
+				padding: 6px 20px;
+				margin-top: 5px;
+				margin-left: 750px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="form-container">
+			<h3>Create Profile</h3>
+		</div>
+		<div class="form-container">
+			<form method="post" target="_self">
+				<div class="form-row">
+					<label for="firstname">First Name:</label>
+					<input placeholder="First Name" type="text" id="firstname" name="firstname" required>
+				</div>
+				<div class="form-row">
+					<label for="lastname">Last Name:</label>
+					<input placeholder="Last Name" type="text" id="lastname" name="lastname" required>
+				</div>
+				<div class="form-row">
+					<label for="date-of-birth">Date of Birth:</label>
+					<input type="date" id="date-of-birth" name="date-of-birth" required>
+				</div>
+				<div class="form-row">
+					<label for="age">Age:</label>
+					<input placeholder="Age" type="number" id="age" name="age" required min="0"  step="1">
+				</div>
+				<!-- Gender -->
+				<div class="form-row">
+					<label>Gender:</label>
+					<div class="gender-options">
+						<label>
+							<input type="radio" name="gender" value="male" required checked> Male </label>
+						<label>
+							<input type="radio" name="gender" value="female"> Female </label>
+					</div>
+				</div>
+				<!-- Current Address -->
+				<div class="address-row">
+					<label for="current-address">Current Address:</label>
+					<textarea id="current-address" name="current-address" rows="4" cols="30" required></textarea>
+				</div>
+				<!-- Permanent Address -->
+				<div class="address-row">
+					<label for="permanent-address">Permanent Address:</label>
+					<textarea id="permanent-address" name="permanent-address" rows="4" cols="30" required></textarea>
+				</div>
+				<button type="submit">Create</button>
+			</form>
+		</div>
+	</body>
+
+</html>

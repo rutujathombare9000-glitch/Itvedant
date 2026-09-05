@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sign Up</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .container {
+            width: 700px;
+            margin: 180px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+         .signup {
+            width: 300px;
+        }
+
+        .signup h2 {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-row label {
+            width: 200px;
+            text-align: right;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .form-row input {
+            width: 125px;
+            height: 18px;
+            box-sizing: border-box;
+        }
+
+        .form-row input::placeholder {
+            font-size: 10px;
+        }
+
+        .button {
+            margin-left: 128px;
+            margin-top: 5px;
+            padding: 2px 10px;
+            font-size: 12px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+
+        <!-- Sign Up Form -->
+        <div class="signup">
+
+            <h2>Sign Up</h2>
+
+            <form>
+
+                <div class="form-row">
+                    <label for="username">Username:</label>
+                    <input 
+                        type="email"
+                        id="username"
+                        name="username"
+                        placeholder="Enter Email ID"
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input 
+                        type="password"
+                        id="password"
+                        name="password"
+                        required>
+                </div>
+
+                
+
+                <button type="submit" class="button">
+                    Sign Up
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

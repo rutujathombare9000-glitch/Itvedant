@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlap Box Asignment</title>
+    <style>
+
+        .container {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            overflow: auto;
+            background-color: rgb(239, 239, 239);
+        }
+
+        /* Fixed element */
+        .fixed-box {
+            position: fixed;
+            top: 50px;
+            left: 390px;
+            width: 300px;
+            height: 70px;
+
+            background-color: red;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: 600px;
+            margin-left: 100px ;
+        }
+        .overlap-box {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fixed-box">
+            <p>This div has <button class="overlap-box">position: fixed,</button></p>
+        </div>
+
+        <div class="content">
+            <p>
+                
+            Data Structures & Algorithms
+            Enroll now! Master core algorithms to ace interviews
+            from IIT & Stanford Alumni. TA Support. Placements in
+            Companies. Get Certified. 350+ Problems.A data structure is a particular way of organizing data
+            in a computer so that it can be used effectively.Learn the most common Data Structures & Algorithms
+            to solve coding problems. Enroll now! Master core
+            Data Structures & Algorithms to ace interviews.Get Certified. 350+ Problems. A data structure is a
+            particular way of organizing data in a computer so
+            that it can be used effectively.Learn the most common Data Structures & Algorithms
+            to solve coding problems. Enroll now! Master core
+            Data Structures & Algorithms to ace interviews.From IIT & Stanford Alumni. TA Support. Placements
+            in Companies. Get Certified. 350+ Problems.A data structure is a particular way of organizing
+            data in a computer so that it can be used effectively.Data Structure is a way of organizing and storing data
+            in a computer so that it can be accessed, processed, and managed efficiently. It provides a systematic
+            method for performing operations such as insertion, deletion, searching, sorting, and updating of data. Data
+            structures are mainly classified into linear data structures, such as arrays, linked lists, stacks, and
+            queues, and non-linear data structures, such as trees and graphs. They help in improving the efficiency and
+            performance of computer programs.Data Structure is a systematic way of organizing, storing, and managing data in a computer so that data can
+            be accessed and processed efficiently. In computer science, a large amount of data needs to be handled in an
+            organized manner. Data structures provide different methods for storing data depending on the requirement of
+            a program. They make operations such as insertion, deletion, searching, sorting, updating, and traversal
+            easier and faster. The choice of a suitable data structure can improve the time and memory efficiency of
+            a program.Data structures are mainly divided into two types: linear and non-linear data structures. In a
+            linear data structure, elements are arranged sequentially, one after another. Examples include Array,
+            Linked List, Stack, and Queue. In a non-linear data structure, elements are arranged in a hierarchical
+            or network-like manner. Examples include Tree and Graph.
+            An Array stores multiple elements of the same type in a continuous memory location and allows elements to be
+            accessed using an index. A Linked List consists of nodes, where each node contains data and a link to
+            another node. A Stack follows the LIFO (Last In, First Out)principle, meaning the last element
+            inserted is removed first. A Queue follows the FIFO (First In, First Out) principle, meaning the
+            first element inserted is removed first. A Tree represents hierarchical relationships, while a Graph
+            represents connections or relationships between different objects.
+            The major operations performed on data structures are insertion, which means adding an element;
+            deletion, which means removing an element; searching, which means finding a particular element;
+            traversal, which means visiting each element; sorting, which means arranging elements in a specific
+            order; and updating, which means modifying existing data.
+            </p>
+        </div>
+</body>
+</html>
